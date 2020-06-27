@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security_table?serverTimezone=UTC&useSSL=true
+    username: root
+    password: root
+
+mybatis:
+  typeAliasesPackage: chenlong.bean
+  mapperLocations: classpath*:chenlong/mappers/*Mapper.xml
