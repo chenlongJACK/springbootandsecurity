@@ -10,3 +10,6 @@ spring:
 mybatis:
   typeAliasesPackage: chenlong.bean
   mapperLocations: classpath*:chenlong/mappers/*Mapper.xml
+
+server:
+  port: 9001

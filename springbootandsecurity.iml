@@ -116,5 +116,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.3" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.18" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.4" level="project" />
   </component>
 </module>

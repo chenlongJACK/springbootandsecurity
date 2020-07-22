@@ -27,23 +27,5 @@ public class LoginController {
     public String error(){
         return "error";
     }
-    @RequestMapping("/downDoc")
-    public void downDoc(String docName, HttpServletResponse response){
-        response.setHeader("Content-Disposition", "attachment; filename="+docName+".doc");
-        String property = System.getProperty("user.dir");
 
-        try {
-            InputStream is=new FileInputStream(property+"/springbootandsecurity/src/main/resources/ftl/"+docName+".doc");
-            OutputStream os=response.getOutputStream();
-            int len=0;
-            byte[] data=new byte[1024];
-            while((len=is.read(data))!=-1){
-                os.write(data);
-            }
-            os.close();
-            is.close();
-        } catch (Exception e) {
-            throw new RuntimeException("文件不存在");
-        }
-    }
 }
